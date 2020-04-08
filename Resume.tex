@@ -1,0 +1,182 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{hyperref}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Zhenguo Chen} % Your name
+\address{1320 Wisteria, APT 4613, Ann Arbor, MI 48104} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{Phone: 3033597579 \ email:  \href{mailto:Zhenguo.Chen@colorado.edu}{Zhenguo.Chen@colorado.edu}} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Colorado Boulder, Colorado, USA} \hfill {\em Aug 2016 - May 2018} 
+\\ College of Engineering and Applied Science
+\\ Master's Degree: Computer Science \hfill { GPA: 4.0 } 
+\smallskip
+\\{\bf Nankai University, Tianjin, China} \hfill {\em Aug 2012 - May 2016} 
+\\ B.S. in Information Security
+\\ B.A. in Law \hfill { Overall GPA: 3.5 }
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Interests \ & Machine Learning, Computer Vision, Natural Language Processing \\
+Skills \ & Python, C++, TensorFlow, Pytorch, Django, Docker \\
+\end{tabular}
+
+\end{rSection}
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{PROFESSIONAL Experience}
+
+\begin{rSubsection}{Clinc, Inc.}{June 2018 - Present}{Software Engineer (Core AI R$\&$D Team)}{Ann Arbor}
+\item Maintained and Improved Clinc NLU with various deep neural network models, such as attention-BiLSTM, Transformer, Encoder-Decoder.
+\item Researched and Enhanced Clinc NLU capabilities, including classification, named-entity recognition, entity-linking, and out-of-domain detection.
+\item Built and integrated models with business logic server for multiple clients, including top 10 banks in US, Europe with millions of users.
+\item Devised, developed and delivered solutions for challenging customer problems.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Experience}
+
+\begin{rSubsection}{Out-of-Domain Detection}{Jan 2020 - Present }{Clinc Research Project}{}
+\item Implemented Prototypical Network to support OOD detection for datasets both with and without OOD training data.
+\item Evaluated multiple models (Proto/Bert/Fasttext/SVM) across multiple datasets.
+\item Researched, optimized OOD detection models as potential solutions to improve Clinc NLU capability.
+\end{rSubsection}
+
+\begin{rSubsection}{Enhance Dialog System with Slot Relation Extraction}{Nov 2019 - Present }{Clinc Research Project}{}
+\item Built state-of-the-art slot relation extraction (RE) models (attention $\&$ transformer).
+\item Designed and conducted experiments to evaluate RE models and built an end-to-end solution.
+\item Integrated slot relation extractors with Clinc dialog system to support customer projects.
+\item Paper submitted to ACL2020.
+\end{rSubsection}
+
+\begin{rSubsection}{Slot Tree for Handling Recursive Queries}{Sept 2018 - Jan 2019 }{Clinc Production Project}{}
+\item Devised and developed algorithms to generate trees structure (Slot Tree) for named-entities.
+\item Applied slot tree to handle recursive queries, which was used in production. 
+\item Designed user-friendly response generation for recursive queries.
+\end{rSubsection}
+
+\begin{rSubsection}{Image Captioning Using Neural Network}{Jan - May 2017 }{Master's Project, CU Boulder}{Advisor: Chris Ketelsen}
+\item Built Convolution Neural Network (VGG16/19) and NLU model (LSTM) to extract features and generate descriptive captions for images.
+\item Designed and developed web pages as an end-to-end solution for user.
+\item YouTube video available \href{https://www.youtube.com/watch?v=f2waevH1b6I}{here}
+\end{rSubsection}
+
+\begin{rSubsection}{Autonomous Vehicle with Obstacle Detection}{Jan - May 2017 }{Master's Project, CU Boulder}{Advisor: Chris Heckman}
+\item Built SLAM (Simultaneous localization and mapping) on robot for localization.
+\item Built real-time object detection module with OpenCV.
+\item Integrated modules in ROS (Robot OS) to facilitate communication between components.
+\end{rSubsection}
+
+\begin{rSubsection}{NXP Asymmetric Encryption Implementation and Optimization}{Jan - Jun 2016 }{Undergrad Dissertation, Nankai University}{Advisor: Zheli Liu}
+\item Built RSA (cryptosystem) and optimized it with Montgomery algorithm.
+\item Programmed and utilized NXP Fame2 co-processor to accelerate RSA encryption.
+\item Built ECC (cryptosystem) and optimized it with Jacobian coordinate.
+\item Programmed and utilized NXP Fame2 co-processor to accelerate ECC encryption.
+\end{rSubsection}
+
+\begin{rSubsection}{Dual Deception Secret Sharing Improvement}{Jan - Jun 2016 }{Undergrad Project, Nankai University}{Advisor: Zhaohui Li}
+\item Implemented Random Grid-based Visual Secret Sharing algorithm for secret sharing.
+\item Improved RGVSS with dual deception (hiding secret information in multiple images).
+\item Built dual deception RGVSS and evaluated its security.
+\end{rSubsection}
+
+\begin{rSubsection}{Book Recommendation System Based on Douban Reviews}{Mar 2014 - Apr 2015}{Undergrad Project, Nankai University}{Advisor: Jie Liu}
+\item Collected and parsed user data from Douban (a book review website).
+\item Applied Lucene as recommendation engine to model users' interest.
+\item Designed and developed backend for final website.
+\end{rSubsection}
+
+\end{rSection}
+
+
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Teaching}
+
+\begin{rSubsection}{}{}{}{}
+\item \normalfont Teaching Assistant CSCI3155 Principle of Programming Language, CU Boulder
+\item \normalfont Graduate Course Assistant CSCI5622 Machine Leanring, CU Boulder
+\end{rSubsection}
+
+\end{rSection}
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Academic Achievements} 
+%  Runners up in B.G.Shirke Vidyarthi Competition for Innovative Project organized by Pune Construction Engineering Research Foundation in January 2018
+% \item Won First Prize in Model Making Competition Organized by Symbiosis Institute of Technology, Pune.
+% \end{rSection}
+
+% \newpage
+
+%----------------------------------------------------------------------------------------
+% Extra Curricular
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{Extra-Cirrucular} \itemsep -3pt
+% \item Co-Organized “ Nirmitee 2017” - a National Symposium of Civil Department of MIT, Pune
+% \item Attended a workshop on Autodesk Revit at IIT Bombay in 2014.
+% \item Winner of Inter Departmental Football Competition 2015.
+% \item Member of the  Rotaract Club Of Pune Pride from 2014 to 2017.
+% \item Worked for a start-up company Named OUST as a Regional Marketing Manager
+% %\item Trained and disciplined in National Cadet Corps (NCC), IIT Kanpur for a year.
+%  %\item  Participated in Vijyoshi Camp 2012 organized at Indian Institute of Science, Bangalore.
+%  %\item Won 2nd position in Kho-Kho in Intramurals conducted by Physical Education Section, IIT Kanpur.
+%  %\item Pursued French as second language during secondary school from Grade 6 to Grade 10. Also participated in French Song Competition and French G.K. Quiz in Class 10th. %
+
+% \end{rSection}
+
+\begin{rSection}{Personal Traits}
+
+\begin{rSubsection}{}{}{}{}
+\item Highly motivated and eager to learn new things.
+\item Ability to work as an individual as well as in group.
+\end{rSubsection}
+
+\end{rSection}
+\end{document}
