@@ -22,7 +22,7 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 \usepackage{hyperref}
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.75in, top=0.6in, right=0.75in, bottom=0.6in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Zhenguo Chen} % Your name
@@ -66,9 +66,10 @@ Skills \ & Python, C++, TensorFlow, Pytorch, Django, Docker \\
 \begin{rSection}{PROFESSIONAL Experience}
 
 \begin{rSubsection}{Clinc, Inc.}{June 2018 - Present}{Software Engineer (Core AI R$\&$D Team)}{Ann Arbor}
-\item Maintained and improved Clinc NLU with various deep neural network models, such as attention-BiLSTM, Transformer, Encoder-Decoder.
-\item Researched and Enhanced Clinc NLU capabilities, including classification, named-entity recognition, entity-linking, and out-of-domain detection.
-\item Built and integrated models with business logic server for multiple clients, including top 10 banks in US, Europe with millions of users.
+\item Researched and enhanced Clinc NLU with new capabilities, including entity-linking, recursive query handling and out-of-domain detection.
+\item Developed improvements for NLU models in terms of accuracy and training time, with various deep neural network models, such as attention-BiLSTM, Transformer, etc.
+
+\item Built and integrated models with business logic servers for multiple clients, including top 10 banks in US and Europe with up to 6 million users.
 \item Devised, developed and delivered solutions for challenging customer problems.
 \end{rSubsection}
 
@@ -80,17 +81,16 @@ Skills \ & Python, C++, TensorFlow, Pytorch, Django, Docker \\
 
 \begin{rSection}{Research Experience}
 
-\begin{rSubsection}{Out-of-Domain Detection}{Jan 2020 - Present }{Clinc Research Project}{}
-\item Implemented Prototypical Network to support OOD detection for datasets both with and without OOD training data.
-\item Evaluated multiple models (Proto/Bert/Fasttext/SVM) across multiple datasets.
-\item Researched, optimized OOD detection models as potential solutions to improve Clinc NLU capability.
+\begin{rSubsection}{Enhance Dialog System with Slot Relation Extraction (RE)}{Nov 2019 - Present }{Clinc Research Project}{}
+\item Designed and conducted experiments to demonstrate the benefits of augmenting a dialog system with RE model (extract relations between entities). Paper under review for EMNLP 2020.
+\item Built state-of-the-art RE models (attention $\&$ transformer) and designed an end-to-end solution.
+\item Integrated RE with Clinc dialog system to support customer projects.
 \end{rSubsection}
 
-\begin{rSubsection}{Enhance Dialog System with Slot Relation Extraction}{Nov 2019 - Present }{Clinc Research Project}{}
-\item Built state-of-the-art slot relation extraction (RE) models (attention $\&$ transformer).
-\item Designed and conducted experiments to evaluate RE models and built an end-to-end solution.
-\item Integrated slot relation extractors with Clinc dialog system to support customer projects.
-\item Paper submitted to ACL2020.
+\begin{rSubsection}{Out-of-Domain Detection}{Jan 2020 - Present }{Clinc Research Project}{}
+\item Implemented Prototypical Network to support OOD detection for datasets both with and without OOD training data.
+\item Evaluated multiple models (Proto, Bert, Fasttext, etc.) across multiple datasets.
+\item Researched, optimized OOD detection models as potential solutions to improve Clinc NLU capability (improved ROC scores by around 6\%).
 \end{rSubsection}
 
 \begin{rSubsection}{Slot Tree for Handling Recursive Queries}{Sept 2018 - Jan 2019 }{Clinc Production Project}{}
@@ -171,12 +171,12 @@ Skills \ & Python, C++, TensorFlow, Pytorch, Django, Docker \\
 
 % \end{rSection}
 
-\begin{rSection}{Personal Traits}
+% \begin{rSection}{Personal Traits}
 
-\begin{rSubsection}{}{}{}{}
-\item Highly motivated and eager to learn new things.
-\item Ability to work as an individual as well as in group.
-\end{rSubsection}
+% \begin{rSubsection}{}{}{}{}
+% \item Highly motivated and eager to learn new things.
+% \item Ability to work as an individual as well as in group.
+% \end{rSubsection}
 
-\end{rSection}
+% \end{rSection}
 \end{document}
